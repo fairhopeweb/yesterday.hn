@@ -1,0 +1,26 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Read yesterday's Hacker News with today's comments - yesterday.hn</title>
+  <meta name="description" content="Read yesterday's Hacker News with today's comments">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        const dateEnd = Math.floor(yesterday.getTime() / 1000)
+    
+        const dayBefore = new Date();
+        dayBefore.setDate(dayBefore.getDate() - 2);
+        const dateStart = Math.floor(dayBefore.getTime() / 1000)
+    
+        window.location.replace(`https://hn.algolia.com/?dateRange=custom&dateEnd=${dateEnd}&dateStart=${dateStart}&page=0&prefix=false&query=&sort=byPopularity&type=story`);
+    </script>
+    Redirecting...
+</body>
+
+</html>
