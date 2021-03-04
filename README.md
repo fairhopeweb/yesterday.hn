@@ -2,7 +2,7 @@
 
 Read yesterday's Hacker News with today's comments. https://yesterday.hn.
 
-## Why???
+## Why?
 
 When I do my morning [Hacker News](https://news.ycombinator.com/) routine, I often find interesting stories on the `new` page, but for the ones that were posted recently (with too few comments), I find myself deferring reading the story as I want to read its associated comments in one go.
 
